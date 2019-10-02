@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = "KeyboardUtils"
-    s.version = "1.0.0"
+    s.version = "1.1.0"
     s.summary = "A collection of keyboard utils that makes listening to its notifications much easier."
     s.homepage = "https://github.com/berbschloe/KeyboardUtils"
     s.license = "MIT"
