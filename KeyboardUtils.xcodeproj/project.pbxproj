@@ -23,7 +23,7 @@
 		772EB7312296FAB6001D292A /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EB7302296FAB6001D292A /* Conversation.swift */; };
 		772EB73322970400001D292A /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EB73222970400001D292A /* ConversationViewController.swift */; };
 		772EB73722974416001D292A /* KeyboardNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EB73622974416001D292A /* KeyboardNotificationType.swift */; };
-		772EB739229747E2001D292A /* KeyboardObserver+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EB738229747E2001D292A /* KeyboardObserver+UIViewController.swift */; };
+		772EB739229747E2001D292A /* UIViewController+KeyboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772EB738229747E2001D292A /* UIViewController+KeyboardUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,7 @@
 		772EB7302296FAB6001D292A /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		772EB73222970400001D292A /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		772EB73622974416001D292A /* KeyboardNotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationType.swift; sourceTree = "<group>"; };
-		772EB738229747E2001D292A /* KeyboardObserver+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardObserver+UIViewController.swift"; sourceTree = "<group>"; };
+		772EB738229747E2001D292A /* UIViewController+KeyboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardUtils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 				772EB73622974416001D292A /* KeyboardNotificationType.swift */,
 				772EB70F2296366F001D292A /* KeyboardNotificationInfo.swift */,
 				772EB711229637A0001D292A /* KeyboardObserver.swift */,
-				772EB738229747E2001D292A /* KeyboardObserver+UIViewController.swift */,
+				772EB738229747E2001D292A /* UIViewController+KeyboardUtils.swift */,
 				772EB7132296384F001D292A /* KeyboardLayoutGuide.swift */,
 				772EB6F92296364F001D292A /* Info.plist */,
 				772EB6F82296364F001D292A /* KeyboardUtils.h */,
@@ -312,7 +312,7 @@
 				772EB73722974416001D292A /* KeyboardNotificationType.swift in Sources */,
 				772EB712229637A0001D292A /* KeyboardObserver.swift in Sources */,
 				772EB7102296366F001D292A /* KeyboardNotificationInfo.swift in Sources */,
-				772EB739229747E2001D292A /* KeyboardObserver+UIViewController.swift in Sources */,
+				772EB739229747E2001D292A /* UIViewController+KeyboardUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,7 +24,9 @@ class ConversationsViewController: UIViewController, UITableViewDataSource, UITa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        keyboardObserver.updateAdditionalSafeAreaInsets(forViewController: self)
+        keyboardObserver.addObserver(forType: .willChangeFrame) { [weak self] (info) in
+            self?.updateAdditionalSafeAreaInsets(withInfo: info)
+        }
 
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: animated)

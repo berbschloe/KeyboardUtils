@@ -12,6 +12,8 @@ public typealias KeyboardNotificationHandler = (KeyboardNotificationInfo) -> Voi
 
 open class KeyboardObserver {
 
+    static let shared = KeyboardObserver()
+
     private let notificationCenter: NotificationCenter
     private let queue: OperationQueue?
 
@@ -23,12 +25,12 @@ open class KeyboardObserver {
         self.queue = queue
     }
 
-    func addObserver(forType type: KeyboardNotificationType, handler: @escaping KeyboardNotificationHandler) {
+    open func addObserver(forType type: KeyboardNotificationType, handler: @escaping KeyboardNotificationHandler) {
 
         let handlers = handlersByType[type, default: []]
         handlersByType[type] = handlers + [handler]
 
-        guard !handlers.isEmpty else {
+        guard handlers.isEmpty else {
             return
         }
 

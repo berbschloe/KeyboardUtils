@@ -6,7 +6,7 @@
 //  Copyright © 2019 Brandon Erbschloe. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 open class KeyboardLayoutGuide: UILayoutGuide {
 

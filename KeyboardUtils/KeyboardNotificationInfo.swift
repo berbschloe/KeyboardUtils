@@ -34,7 +34,7 @@ public struct KeyboardNotificationInfo {
         animateAlong(animations: animations, completion: nil)
     }
 
-    public func animateAlong(animations: (() -> Void), completion: ((_ finished: Bool) -> Void)?) {
+    private func animateAlong(animations: (() -> Void), completion: ((_ finished: Bool) -> Void)?) {
 
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(animationDurration)
@@ -59,9 +59,7 @@ extension KeyboardNotificationInfo {
             beginFrame: userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as? CGRect ?? .zero,
             endFrame: userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero,
             animationDurration: userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval ?? 0,
-            animationCurve: (
-                userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int
-            ).flatMap(UIView.AnimationCurve.init(rawValue:)) ?? .easeInOut
+            animationCurve: (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int).flatMap(UIView.AnimationCurve.init(rawValue:)) ?? .easeInOut
         )
     }
 }
